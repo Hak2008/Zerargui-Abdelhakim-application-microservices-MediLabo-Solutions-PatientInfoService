@@ -2,12 +2,14 @@ package com.medilabosolutions.patientinfoservice.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
 @Entity
 @Data
+@NoArgsConstructor
 public class Patient {
 
     @Id
