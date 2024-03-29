@@ -1,0 +1,12 @@
+# Utilisation de l'image officielle MySQL
+FROM mysql:8.0
+
+# Définition du mot de passe root
+ENV MYSQL_ROOT_PASSWORD=PayMyBuddy07.
+
+# Définition du nom de la base de données
+ENV MYSQL_DATABASE=patientinfoservice
+
+# Copier les scripts SQL dans le répertoire /docker-entrypoint-initdb.d/
+COPY create_table.sql /docker-entrypoint-initdb.d/
+COPY insert_data.sql /docker-entrypoint-initdb.d/
