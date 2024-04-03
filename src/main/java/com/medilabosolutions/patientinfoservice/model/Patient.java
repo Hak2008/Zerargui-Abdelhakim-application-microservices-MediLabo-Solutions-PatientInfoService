@@ -24,7 +24,7 @@ public class Patient {
 
     @Column(name = "dateOfBirth", nullable = false)
     @Temporal(TemporalType.DATE)
-    @DateTimeFormat(pattern = "yyyy-MM-dd") // Specify the expected date format
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date dateOfBirth;
 
     @Column(nullable = false)
